@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+
+
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #202124;
+  color: rgb(232, 234, 237);
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.grid--6-cols {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 2rem;
+}
+
+.product-box {
+  width: 100%;
+
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-box:hover .product__image {
+  transform: scale(1.15);
+}
+
+.section-products {
+  margin-top: 10rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+
+}
+.product__image-box {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product__image {
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+
+.product__details {
+  padding: 1.5rem 0;
+  line-height: 1.5;
+}
+
+.product__details__price {
+  font-size: 1.6rem;
+  font-weight: 700;
+
+}
+
+.product__details__name {
+  color: rgb(189, 193, 198);
+  font-weight: 500;
+}
+
+.product__details__review-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.product__details__review__review-count {
+  font-size: 1.2rem;
+  color: rgb(189, 193, 198);
+}
+
+.mb-medium {margin-bottom: 3rem !important;}
+.mb-huge {margin-bottom: 8rem !important;}
+
+
+/* Product Details */
+
+.product-container {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-gallery {
+  width: 50%;
+  text-align: center;
+}
+
+.main-image {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.product-details {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #333;
+}
+
+.price {
+  color: #E44D26;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.purchase-button {
+  padding: 10px 20px;
+  background-color: #0b78e3;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  align-self: start;
+}
+
+.purchase-button:hover {
+  background-color: #0a6ecb;
+}
